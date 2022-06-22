@@ -18,7 +18,6 @@ for (let i = 0; i < 10; i++) {
     createArray();
 }
 
-const arrayString = array.join(' ');
 const max = Math.max(...array);
 const min = Math.min(...array);
 const average = array.reduce((a,b)=>(a+b))/array.length;
