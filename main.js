@@ -1,9 +1,8 @@
 const results = document.querySelectorAll('.result');
 const button = document.querySelector('.btn');
-const buttonReset = document.querySelector('.btn-reset');
 let array = [];
 
-button.addEventListener('click', function () {
+function calculate () {
     // генерирует 10 случайных чисел в диапазоне от -10 до 10
     for (let i = 0; i < 10; i++) {
         let createArray = () => {
@@ -33,8 +32,6 @@ button.addEventListener('click', function () {
     results[3].innerHTML = `Среднее арифметическое: ${average}`;
     results[4].innerHTML = `Сумма чисел: ${sum}`;
     results[5].innerHTML = `Произведение чисел: ${multiplication}`;
-})
+}
 
-buttonReset.addEventListener('click', function () {
-
-})
+button.addEventListener('click', calculate);
