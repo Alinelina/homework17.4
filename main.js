@@ -3,6 +3,7 @@ const button = document.querySelector('.btn');
 let array = [];
 
 function calculate () {
+    array = [];
     // генерирует 10 случайных чисел в диапазоне от -10 до 10
     for (let i = 0; i < 10; i++) {
         let createArray = () => {
